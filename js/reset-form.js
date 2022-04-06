@@ -39,7 +39,7 @@ const resetTime = () => {
   timeIn.value = Default.TIME;
   timeOut.value = Default.TIME;
 };
-const checkboxReset = (element) => {
+const resetCheckbox = (element) => {
   element.forEach((value) => {
     value.checked = false;
   });
@@ -58,8 +58,8 @@ const resetForm = () => {
   typesHousing.value = Default.TIPE_HOUSE;
   numberRoom.value = Default.NUMBERS_ROOM;
   numberSeats.value = Default.NUMBERS_SEAT;
-  checkboxReset(featuresCheckbox);
-  checkboxReset(filterFeatures);
+  resetCheckbox(featuresCheckbox);
+  resetCheckbox(filterFeatures);
   resetPicture();
 };
 
